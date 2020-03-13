@@ -8,7 +8,7 @@ Uses the mXparser library by Mariusz Gromada for evaluating functions. Uses Java
 
 
 
-1. Usage
+**1. Usage**
 
 Note: to use the application you need Java installed on your computer.
 
@@ -31,8 +31,7 @@ To do that, you provide several conditions and the appropriate values of the fun
 
 To exit the generated graph just press Escape – keep in mind that the arguments will stay there so if you want to use different ones you need to delete them.
 
-2. Implementation
-
+**2. Implementation**
 Probably the most important part of the application is a simple linked list of objects called “Point” - they have a couple of attributes, most importantly Xand Y. Each point’s X corresponds to one value you provide in the main menu. Similarly, its' Y will be the value of the argument once its' calculated through the function or assigned.
 
 Interpreting functions that a user entered is a tremendous task so a dedicated library – mXparser – has been used for it. Thankfully it supports variables, so one can provide it a string such as “2*x+7” along with a value for the x as an argument and it’s going to calculate that. It also supports checking whether a statement (such as 6>7, or more importantly x>7) is true – that’s how the conditional formulas are implemented. As you can see, using a single formula for all points is actually pretty easy – just use a for loop to go through every point, get its X value, put it as an argument in the formula the user provided and save the output as Y.
