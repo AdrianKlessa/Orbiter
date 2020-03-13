@@ -1,0 +1,7 @@
+#mainGridPane{
+	-fx-background-color: #383838;
+}
+
+Label{
+	-fx-text-fill: white;
+}
